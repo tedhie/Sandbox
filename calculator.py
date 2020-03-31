@@ -1,16 +1,18 @@
-while 1 == 1:
-    x = int(input("Input 1: "))
-    z = input("+,-,*,/")
-    y = int(input("Input 2: "))
-    if z == "+":
-        b = x + y
-        print(b)
-    elif z == "-":
-        b = x - y
-        print(b)
-    elif z == "*":
-        b = x * y
-        print(b)
-    elif z == "/":
-        b = x / y
-        print(b)
+while True:
+    user_input = input("")
+    if "+" in user_input:
+        split = user_input.split("+")
+        calculated = int(split[0]) + int(split[1])
+        print(calculated)
+    elif "-" in user_input:
+        split = user_input.split("-")
+        calculated = int(split[0]) - int(split[1])
+        print(calculated)
+    elif "*" in user_input:
+        split = user_input.split("*")
+        calculated = int(split[0]) * int(split[1])
+        print(calculated)
+    elif "/" in user_input:
+        split = user_input.split("/")
+        calculated = int(split[0]) / int(split[1])
+        print(calculated)
